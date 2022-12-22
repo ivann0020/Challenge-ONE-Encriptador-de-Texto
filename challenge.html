@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles.css">
+
+    <script type="text/javascript" src="script-button.js">  </script>
+    <title>Challenge 1</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logoImg" src="img/Vectorlogo.png">
+    </header>
+
+    <main>
+        <section class="container">
+
+            <textarea id="introducir-texto" class="textarea" type="mensaje" cols="50" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="alerta">
+                <p>
+                    <img src="img/Vector.png" id="logoAlert">
+                    Solo minusculas y sin acentos
+                </p>
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="btn-encriptar" id="btn-encriptar" onClick="cifrar()">Encriptar</button>
+                <button type="button" class="btn-desencriptar" id="btn-desencriptar"
+                    onClick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+
+        <section class="left">
+
+            <div id="conteiner-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="conteinerImg" class="conteinerImg">
+                <img src="img/Muñecomuñeco.png" alt="Muñeco">
+                <p id="text1" class="text1"><strong>Ningún texto mensaje fue encontrado</strong></p>
+                <p id="text2" class="text2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="resultado" readonly></textarea>
+            <button id="btn-copy" class="btnCopy" onclick="copiar()">Copiar</button>
+
+
+        </section>
+
+    </main>
+</body>
+
+</html>
